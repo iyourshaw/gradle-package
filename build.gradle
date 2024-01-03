@@ -7,6 +7,7 @@ plugins {
 
 group = 'net.yourshaw'
 version = '3.0'
+description = 'Testing publishing a package with gradle'
 
 repositories {
     mavenCentral()
