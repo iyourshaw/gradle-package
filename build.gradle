@@ -3,6 +3,8 @@ plugins {
     id 'maven-publish'
 }
 
+
+
 group = 'net.yourshaw'
 version = '3.0'
 
@@ -11,6 +13,11 @@ repositories {
 }
 
 publishing {
+    publications {
+        gradle_publish(MavenPublication) {
+            from components.java
+        }
+    }
     repositories {
         maven {
             name = "GitHubPackages"
